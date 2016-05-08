@@ -136,6 +136,63 @@ Từ bản Juno, Keystone có tính năng mới là federation of identity servi
 </ul>
 </li>
 
+<li>
+<h4>OpenStack Compute bao gồm các components sau</h4>	
+<ul>
+	<li><h4>nova-api service</h4>
+	Tiếp nhận và phản hồi lời gọi API từ người dùng, hỗ trợ OpenStack Compute API, Amazon EC2 API và Admin API đặc biệt dành cho người quản trị. Nó thực thi một số chính sách và khời tạo hầu hết các hoạt động điều phối, ví dụ như chạy một máy ảo.
+	</li>
+	<li><h4>nova-api-metadata service</h4>
+	Tiếp nhận metadata request từ máy ảo. Dịch vụ này sẽ được sử dụng khi bạn chạy mô hình multi-host với nova-network.
+	</li>
+	<li><h4>nova-compute service</h4>
+	Là một worker daemon chịu trách nhiệm khởi tạo và ngắt hoạt động của máy ảo thông qua hypervisor APIs. Ví dụ:
+	<ul>
+		<li>XenAPI với XenServer/XCP</li>
+		<li>libvirt với KVM hoặc QEMU</li>
+		<li>VMwareAPI với VMware</li>
+	</ul>
+	Quá trình thực thi khá phức tạp. Về cơ bản, daemon này sẽ tiếp nhận hành động từ hàng đợi (message queue như Rabbit MQ) và thực hiện chuỗi lệnh hệ thống như vận hành một máy ảo KVM và cập nhật trạng thái vào database (nova database)
+	</li>
+	<li><h4>nova-scheduler service</h4>
+	Tiếp nhận yêu cầu tạo máy ảo từ hàng đợi và xác định compute server để chạy máy ảo.
+	</li>
+	<li><h4>nova-conductor module</h4>
+	Là trung gian tương tác giữa nova-compute và database. Daemon này giúp tránh việc truy cập trực tiếp từ nova-compute và database vì lý do bảo mật. (Chú ý: nova-conductor không cài đặt trên node chạy nova-compute)
+	</li>
+	<li><h4>nova-cert module</h4>
+	</li>
+	<li><h4>nova-network worker daemon</h4>
+	Tương tự nova-compute, tiếp nhận yêu cầu tạo network từ hàng đợi và khởi tạo network. (thiết lập bridging interfaces hay thay đổi rules của IPtables).
+	</li>
+	<li><h4>nova-consoleauth daemon</h4>
+	Ủy quyền token cho người dùng được cung cấp console proxy (novncproxy và nova-xvpvncproxy).
+	</li>
+	<li><h4>nova-novncproxy daemon</h4>
+	Cung cấp một proxy cho việc truy cập một máy ảo đang chạy thông qua kết nối VNC. Hỗ trợ novnc client trên trình duyệt web.
+	</li>
+	<li><h4>nova-spicehtml5proxy daemon</h4>
+	Cung cấp một proxy để truy cập máy ảo đang chạy thông qua kết nối SPICE. Hỗ trợ client trên trình duyệt(HTML5)
+	</li>
+	<li><h4>nova-xvpvncproxy daemon</h4>
+	Cung cấp một proxy để truy cập các máy ảo đang chạy thông qua kết nối VNC. Hỗ trợ OpenStack java client.
+	</li>
+	<li><h4>nova-cert daemon</h4></li>
+	<li><h4>nova client</h4>Cho phép người dùng submit các command với vai trò người quản trị tenant hoặc người dùng cuối</li>
+	<li><h4>The queue</h4>Trung tâm chuyển tiếp các thông điệp giữa các daemon. Thông thường là các message broker hỗ trợ giao thức AMQP như RabbitMQ, ZeroMQ.</li>
+	<li><h4>SQL database</h4>
+	Lưu giữ các trạng thái build-time và runtime của hạ tầng cloud, bao gồm:
+	<ul>
+		<li>Các instance type có sẵn</li>
+		<li>Các instance đang sử dụng</li>
+		<li>Các networks đang có sẵn</li>
+		<li>Các project</li>
+	</ul>
+	Theo lý thuyết, OpenStack Compute hỗ trợ bất kỳ database nào như SQLite3 (với mục đích kiểm thử và phát triển), MySQL, PostgreSQL.
+	</li>
+</ul>
+</li>
+
 <li><h4>Mối quan hệ giữa các thành phần</h4>
 <ul>
 <li>Sơ đồ: 
