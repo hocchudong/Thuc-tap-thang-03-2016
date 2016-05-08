@@ -123,19 +123,6 @@ Từ bản Juno, Keystone có tính năng mới là federation of identity servi
 </ul>
 </li>
 
-<li><h4>Các thành phần - gồm 7 thành phần chính:</h4>
-<ul>
-<li>Cloud Controller: đại diện cho trạng thái toàn cục và tương tác với các component khác</li>
-<li>API Server: có thể coi như các Web services cho cloud controller</li>
-<li>Compute Controller: cung cấp tài nguyên máy chủ tính toán</li>
-<li>Object Store: cung cấp dịch vụ lưu trữ</li>
-<li>Auth Manager: cung cấp dịch vụ xác thực và ủy quyền</li>
-<li>Volume Controller: cung cấp các khối lưu trữ bền vững và nhanh chóng cho các computer server</li>
-<li>Network controller: cung cấp mạng ảo cho phép các compute server tương tác với nhau và với public network</li>
-<li>Scheduler lựa chọn compute controller phù hợp nhất để host một instance (máy ảo)</li>
-</ul>
-</li>
-
 <li>
 <h4>OpenStack Compute bao gồm các components sau</h4>	
 <ul>
