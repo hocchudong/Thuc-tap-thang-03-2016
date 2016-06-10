@@ -1,7 +1,5 @@
 #Hướng dẫn dùng Advanced RESTClient để test Openstack API v3
 
-##Mục lục
-
 ##Xác thực
 
 - Các yếu tố để lab bài trên:
@@ -126,3 +124,6 @@ def getlist():
 b=getlist()
 print b
 ```
+##Tài liệu tham khảo
+
+http://developer.openstack.org/api-ref-identity-v3.html#authenticate-v3
