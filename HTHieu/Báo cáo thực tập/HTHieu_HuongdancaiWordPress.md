@@ -7,12 +7,14 @@
 - Di chuyển đến thư mực chứa bộ cài và chạy lệnh sau :
 
 `cd Downloads/
+
 ls
+
 chmod +x xampp-linux-5.6.3-0-installer.run
+
 sudo ./xampp-linux-5.6.3-0-installer.run`
 
 - Sau đó thực hiện cài đặt như với phần mềm bình thươc (ấn next liên tuc)
-
 
 ##Tạo db cho wordpr
 
@@ -44,3 +46,7 @@ sudo ./xampp-linux-5.6.3-0-installer.run`
 
 - Đăng nhập lạ có kết quả:
 <img src=http://www.nguyenvanquan7826.com/wp-content/uploads/2015/03/my-blog.png>
+
+Nguồn 
+http://www.nguyenvanquan7826.com/2015/03/14/cai-wordpress-tren-localhost-trong-ubuntu/
+http://www.nguyenvanquan7826.com/2015/03/14/cai-dat-xampp-tren-ubuntu/
