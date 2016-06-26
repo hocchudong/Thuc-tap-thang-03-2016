@@ -6,17 +6,17 @@
 
 - Di chuyển đến thư mực chứa bộ cài và chạy lệnh sau :
 
-`cd Downloads/
+`cd Downloads/`
 
-ls
+`ls`
 
-chmod +x xampp-linux-5.6.3-0-installer.run
+`chmod +x xampp-linux-5.6.3-0-installer.run`
 
-sudo ./xampp-linux-5.6.3-0-installer.run`
+`sudo ./xampp-linux-5.6.3-0-installer.run`
 
 - Sau đó thực hiện cài đặt như với phần mềm bình thươc (ấn next liên tuc)
 
-##Tạo db cho wordpr
+##Tạo db cho wordpress
 
 - Truy cập http://localhost/phpmyadmin/ và làm theo bước sau
 
