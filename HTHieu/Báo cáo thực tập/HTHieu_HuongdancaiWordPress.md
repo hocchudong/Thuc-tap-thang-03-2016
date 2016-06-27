@@ -46,7 +46,7 @@
 
 <img src=http://www.nguyenvanquan7826.com/wp-content/uploads/2015/03/login-blog.png>
 
-- Đăng nhập lạ có kết quả:
+- Đăng nhập lại có kết quả:
 <img src=http://www.nguyenvanquan7826.com/wp-content/uploads/2015/03/my-blog.png>
 
 Nguồn:
