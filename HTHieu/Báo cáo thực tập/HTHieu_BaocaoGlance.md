@@ -144,3 +144,14 @@
 - Sau khi compute node cung cấp vCPU và tài nguyên bộ nhớ, instance sẽ khởi động từ vda
 
 - Khi instance bị xóa bỏ, thì tài nguyên bị thu hồi,image không bị thay đổi trong suốt quá trình
+
+##Vấn đề khác
+
+- Thư mục lưu trữ glance:/etc/glance
+
+- Thư mục chứa file glance glance:/etc/glance/glance.conf
+
+- Thư mục log glance glance:/var/log/glance-scrubber
+
+- Dòng cấu hình lưu trữ store=/var/lib/glance
+
