@@ -16,6 +16,7 @@
 
 - Sau đó thực hiện cài đặt như với phần mềm bình thươc (ấn next liên tuc)
 
+- Để bật giao diện xampp dùng lệnh /opt/lampp/manager-linux-x64.run
 
 ##Tạo db cho wordpress
 
