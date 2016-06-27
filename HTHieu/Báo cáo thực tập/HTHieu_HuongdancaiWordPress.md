@@ -19,7 +19,7 @@
 
 ##Tạo db cho wordpress
 
-- Truy cập http://localhost/phpmyadmin/ và làm theo bước sau
+- Truy cập `http://localhost/phpmyadmin/` và làm theo bước sau
 
 <img src=http://www.nguyenvanquan7826.com/wp-content/uploads/2015/03/phpMyAdmin.png>
 
