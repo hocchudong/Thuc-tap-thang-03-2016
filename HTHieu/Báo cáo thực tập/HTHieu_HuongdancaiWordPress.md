@@ -17,7 +17,7 @@
 - Sau đó thực hiện cài đặt như với phần mềm bình thươc (ấn next liên tuc)
 
 
-##Tạo db cho wordpr
+##Tạo db cho wordpress
 
 - Truy cập http://localhost/phpmyadmin/ và làm theo bước sau
 
