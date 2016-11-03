@@ -1,6 +1,9 @@
 #Giới thiệu về Prometheus
 
-Prometheus là hệ thống giám sát mã nguồn mở. 
+- Prometheus là hệ thống giám sát mã nguồn mở. 
+- Prometheus thích hợp để giám máy chủ trung tâm, dịch vụ. 
+- Cho độ tin cậy cao và chạy độc lập, không phụ thuộc lưu trữ mạng hoặc remote service. 
+- Có thể lấy dữ liệu từ các monitoring systems
 
 **Tính năng:** 
 
@@ -29,5 +32,15 @@ Hầu hết các thành phần được viết trên ngôn ngữ lập trình Go
 
 <img src=http://i.imgur.com/kx3f54W.png>
 
-Prometheus thích hợp để giám máy chủ trung tâm, dịch vụ. Cho độ tin cậy cao và chạy độc lập, không phụ thuộc lưu trữ mạng hoặc remote service.
+Tham khảo: 
+
+[1]- https://developers.soundcloud.com/blog/prometheus-monitoring-at-soundcloud
+
+[2]- https://prometheus.io/docs/introduction/overview/
+
+[3]- http://www.slideshare.net/brianbrazil/prometheus-a-next-generation-monitoring-system-fosdem-2016
+
+
+
+
 
