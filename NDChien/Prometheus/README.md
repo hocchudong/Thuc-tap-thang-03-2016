@@ -28,3 +28,6 @@ Hầu hết các thành phần được viết trên ngôn ngữ lập trình Go
 **Kiến trúc:**
 
 <img src=http://i.imgur.com/kx3f54W.png>
+
+Prometheus thích hợp để giám máy chủ trung tâm, dịch vụ. Cho độ tin cậy cao và chạy độc lập, không phụ thuộc lưu trữ mạng hoặc remote service.
+
